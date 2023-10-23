@@ -1,7 +1,7 @@
 function formatMessage(message, maxLength) { 
     const changeMessage = message.slice(0, maxLength) + "...";
-    const result = message.length <= maxLength ? `"${message}"` : `"${changeMessage}"`;
-    return result;
+    return  message.length <= maxLength ? message : changeMessage;
+    
 }
 
 console.log(formatMessage("Curabitur ligula sapien", 16)); // "Curabitur ligula..."
